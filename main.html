@@ -1,0 +1,49 @@
+<html>
+	<head>
+	
+	<title> Assignment 2 </title>
+	
+	<link rel="stylesheet" href="leaflet.css" />
+	<script src="leaflet.js"></script>
+	
+	<link rel="stylesheet" href="style.css">
+	<script  src="functions.js"></script>
+	</head>
+	<body>
+		<div id = options> 
+			Location
+			<br>
+			<select class="locationList" id ="location" name="location">
+				<option value="cork,ireland">Cork, Ireland</option>
+				<option value="dublin,ireland">Dublin, Ireland</option>
+				<option value="london,uk">London, UK</option>
+				<option value="newyork,usa">New York, USA</option>
+				<option value="riodejaneiro,brazil">Rio de Janeiro, Brazil</option>
+				<option value="marseille,france">Marseille, France</option>
+				<option value="paris,france">Paris, France</option>
+				<option value="tokyo,japan">Tokyo, Japan</option>
+				<option value="sydney,australia">Sydney, Australia</option>
+				<option value="johannesburg,southafrica">Johannesburg, South Africa</option>
+			</select>
+			<br>
+			Tags
+			<br>
+			<input type="text" id="tags" name="tags">
+			<br>
+			<div class="search">
+				<div id="searchButton">Find Images</div>
+			</div>
+		</div>
+		<div id = "map"> </div>
+		<div id = "outerDiv"> 
+			<div id ="innerDiv" onmouseover=style.cursor="hand">
+			
+			</div>
+		<div id = "leftArrow" onclick = "moveLeft()" onmouseover=style.cursor="hand"><</div>
+		<div id = "rightArrow" onclick = "moveRight()" onmouseover=style.cursor="hand">></div>
+		</div>
+		<div id= "bigImg"> </div>
+		
+		
+	</body>
+</html>
